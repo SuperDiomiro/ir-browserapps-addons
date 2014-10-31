@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Mihail Latyshov" />
-	<title>Stream Overlay &middot; iRacing Browser Apps &middot; Accelerometer</title>
+	<meta name="author" content="Timo Wesendahl" />
+	<title>GripTV.org iR Browser Apps Addons - Gear & Speed</title>
 	<!-- less -->
 	<link rel="stylesheet/less" type="text/css" href="css/overlay.less" />
 	<script src="/libs/less.min.js"></script>
@@ -18,13 +18,16 @@
 	<script src="/libs/coffee-script.js"></script>
 	<!-- app -->
 	<script src="/libs/jquery.min.js"></script>
-	<script src="js/app.coffee" type="text/coffeescript"></script>
 	<!-- streamOverlay -->
 	<script src="/libs/ir.coffee" type="text/coffeescript"></script>
 	<script src="js/overlay.coffee" type="text/coffeescript"></script>
 </head>
 <body ng-cloak>
-
+	<div ng-controller="CarCtrl" class="gearspeed"> 
+		<div class="gearicon"></div>
+		<div app-cargear class="gear"></div>
+		<div app-carspeed class="speed"></div>
+	</div>
 </body>
 </html>
 

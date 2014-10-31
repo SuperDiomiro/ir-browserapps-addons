@@ -1,14 +1,62 @@
-@bootstrap-path: "/libs/bootstrap/less/";
+::-webkit-scrollbar {
+    visibility: hidden;
+}
 
-@import "@{bootstrap-path}variables.less";
+body{
+font-family: 'Segoe UI';
+}
 
-@import "@{bootstrap-path}mixins.less";
-@import "@{bootstrap-path}normalize.less";
-@import "@{bootstrap-path}scaffolding.less";
-@import "@{bootstrap-path}type.less";
+.gearspeed {
+	position: absolute;
+	
+	height: 61px;
+	width: 254px;
+	
+	right: inherit;
+	bottom: inherit;
+	top: 10px;
+	left: 10px;
+	
+	background-color: black;
+	
+	border-radius: 6px;
+	border-color: black;
+	border-width: 3px;
+	border-style: solid;
+	
+	.gear {
+		position: absolute;
+		top: 2px;
+		right: 16px;
+		
+		text-align: center;
+		font-size: 37px;
+		color: white;
+	}
+	
+	.gearicon{
+		position: absolute;
+		top: 3px;
+		right: 50px;
+		
+		height: 52px;
+		width: 52px;
+		
+		background-image: url('../img/gear.png');
+	}
+			
+	.speed {
+		position: absolute;
+		top: 6px;
+		left: 4px;
+		
+		text-align: right;
+		font-size: 32px;
+			
+		color: white;
+		min-width: 138px;
+	}	
+	
+	
 
-@default-bg-color: #111;
-@default-bg-opacity: 75%;
-@default-bg: fade(@default-bg-color, @default-bg-opacity);
-
-@import "overlay-overrides.less";
+}
