@@ -1,0 +1,121 @@
+@forcesContainerDimensions: 100px;
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.pedals {
+	position: absolute;
+	right: 689px;
+	bottom: 45px;
+	width: @forcesContainerDimensions;
+	height: @forcesContainerDimensions;
+	background-color: black;
+	border-radius: 6px;
+	border-color: black;
+	border-width: 3px;
+	border-style: solid;
+	height: 143px;
+
+
+	> .wrapper {
+		width: @forcesContainerDimensions/2;
+		height: @forcesContainerDimensions/2;
+		margin-left: 45%;
+		margin-top: 70%;
+		position: relative;
+		.throttle, .brake, .clutch {
+			position: absolute;
+			min-width: 20%;
+			min-height: 0%;
+			margin-top: 126%;
+		}
+		
+		@brakeBgColor: #f33;
+		@throttleBgColor: #2bdb08;
+		@clutchBgColor: #06a6d8;
+		.throttle {
+			background: @throttleBgColor;
+			z-index: 2;
+		}
+		.brake {
+			background: @brakeBgColor;
+			z-index: 2;
+		}
+		.clutch {
+			background: @clutchBgColor;
+			z-index: 2;
+		}
+
+		.clutch-bg, .brake-bg, .throttle-bg {
+			width: 32%;
+			height: 114%;
+			margin-top: 19%;
+			background: #000000;
+			position: absolute;
+			z-index: 1;
+		}
+		.brake-bg {
+			margin-left: -6%;
+			
+		}
+		.throttle-bg {
+			margin-left: 44%;
+		}
+		.clutch-bg {
+			margin-left: -56%;
+		}
+	}
+
+}
+// Standalone
+.pedals {
+	right: inherit;
+	bottom: inherit;
+	top: 10px;
+	left: 10px;
+}
+
+
+
+
+
+
+// B E S C H L E U N I G U N G
+
+.forces {
+	position: relative;
+	width: 100px;
+	height: 75px;
+
+
+
+> .wrapper2 {
+		width: 66px;
+		height: 66px;
+		position: absolute;
+		background: url('../img/forces.png') no-repeat center center;;
+		top:7px;
+		left:17px;
+
+
+		
+		.anzeiger {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			background-color: #ff0000;
+			border-width:3px;
+			border-style: solid;
+			border-color: #ff0000;
+		}
+	}
+}
+	
+	
+	// Standalone
+.forces {
+	right: inherit;
+	bottom: inherit;
+	top: 10px;
+	left: 10px;
+}

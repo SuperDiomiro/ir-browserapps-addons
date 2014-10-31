@@ -1,0 +1,63 @@
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+body{
+font-family: 'Segoe UI';
+}
+
+.gearspeed {
+	position: absolute;
+	background-color: black;
+	border-radius: 6px;
+	border-color: black;
+	border-width: 3px;
+	border-style: solid;
+	height: 67px;
+	width: 260px;
+
+	.gear {
+		
+		position: absolute;
+		top: 2px;
+		right: 16px;
+		text-align: center;
+		font-size: 37px;
+
+		color: white;
+
+	}
+	
+	.gearicon{
+		position: absolute;
+		top: 3px;
+		right: 50px;
+		height: 52px;
+		width: 52px;
+		background-image: url('http://localhost:8182/gearspeed/img/gear.png');
+	
+	}
+			
+	.speed {
+			position: absolute;
+			top: 6px;
+			left: 4px;
+			
+			text-align: right;
+			font-size: 32px;
+			
+			color: white;
+			min-width: 138px;
+
+	}	
+	
+	
+
+}
+// Standalone
+.gearspeed {
+	right: inherit;
+	bottom: inherit;
+	top: 10px;
+	left: 10px;
+}

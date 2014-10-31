@@ -1,0 +1,14 @@
+@bootstrap-path: "/libs/bootstrap/less/";
+
+@import "@{bootstrap-path}variables.less";
+
+@import "@{bootstrap-path}mixins.less";
+@import "@{bootstrap-path}normalize.less";
+@import "@{bootstrap-path}scaffolding.less";
+@import "@{bootstrap-path}type.less";
+
+@default-bg-color: #111;
+@default-bg-opacity: 75%;
+@default-bg: fade(@default-bg-color, @default-bg-opacity);
+
+@import "overlay-overrides.less";
