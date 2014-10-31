@@ -1,14 +1,95 @@
-@bootstrap-path: "/libs/bootstrap/less/";
+@forcesContainerDimensions: 100px;
+::-webkit-scrollbar {
+    visibility: hidden;
+}
 
-@import "@{bootstrap-path}variables.less";
 
-@import "@{bootstrap-path}mixins.less";
-@import "@{bootstrap-path}normalize.less";
-@import "@{bootstrap-path}scaffolding.less";
-@import "@{bootstrap-path}type.less";
+	.throttle, .brake, .clutch {
+		position: absolute;
+		width: 13px;
+		z-index: 2;
+		
+	}
+		
+	.throttle {
+		background: #2bdb08;
+		left: 73px;
+		bottom: 7px;
+		
+	}
+	.brake {
+		background: #f33;
+		left: 44px;
+		bottom: 7px;
+	}
+	.clutch {
+		background: #06a6d8;
+		left: 15px;
+		bottom: 7px;
+	}
 
-@default-bg-color: #111;
-@default-bg-opacity: 75%;
-@default-bg: fade(@default-bg-color, @default-bg-opacity);
+	
 
-@import "overlay-overrides.less";
+	
+
+.pedals {
+	
+	position: absolute;
+	
+	width: 100px;
+	height: 137px;
+	
+	background-color: black;
+	
+	border-radius: 6px;
+	border-color: black;
+	border-width: 3px;
+	border-style: solid;
+			
+	.clutch-bg, .brake-bg, .throttle-bg {
+		position: absolute;
+		top: 77px;
+		
+		width: 17px;
+		height: 55px;
+		background: #000000;
+		z-index: 1;
+	}
+	.brake-bg {
+		left: 42px;
+	}
+	.throttle-bg {
+		left: 13px;
+	}
+	.clutch-bg {
+		left: 71px;
+	}
+}
+
+
+
+
+
+
+// B E S C H L E U N I G U N G
+
+.forces {
+	position: absolute;
+	left: 30px;
+	top: 17px;
+
+	width: 66px;
+	height: 66px;
+
+	background: url('../img/forces.png') no-repeat center center;;
+
+	.anzeiger {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		background-color: #ff0000;
+		border-width:3px;
+		border-style: solid;
+		border-color: #ff0000;
+	}
+}

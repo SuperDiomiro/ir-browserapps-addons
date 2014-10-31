@@ -18,12 +18,26 @@
 	<script src="/libs/coffee-script.js"></script>
 	<!-- accelerometer -->
 	<script src="/libs/jquery.min.js"></script>
-	<script src="js/accelerometer.coffee" type="text/coffeescript"></script>
 	<!-- streamOverlay -->
 	<script src="/libs/ir.coffee" type="text/coffeescript"></script>
 	<script src="js/overlay.coffee" type="text/coffeescript"></script>
 </head>
 <body ng-cloak>
+
+<div ng-controller="CarCtrl" class="pedals"> 
+
+		<div app-throttle class="throttle"></div>
+		<div app-brake class="brake"></div>
+		<div app-clutch class="clutch"></div>
+	
+	<div class="clutch-bg"></div>
+	<div class="brake-bg"></div>
+	<div class="throttle-bg"></div>
+</div>
+
+<div ng-controller="CarCtrl" class="forces">
+<div app-beschleunigung class="anzeiger">
+</div>
 
 </body>
 </html>

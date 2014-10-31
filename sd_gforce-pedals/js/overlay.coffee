@@ -50,42 +50,36 @@ app.directive 'appThrottle', (iRData) ->
         ir = iRData
 
         scope.$watch 'ir.Throttle', (n, o) ->
-            percent = inputToGToPercent ir.Throttle
+            percent = ir.Throttle
             if percent >= 0
                 element.css
-                    top: (percent*-1) + '%'
-                    left: 50 + '%'
-                    height: percent + '%'
-
-
+                    top: ((percent*-1)*51+130) + 'px'
+                    
 app.directive 'appBrake', (iRData) ->
     link: (scope, element, attrs) ->
         ir = iRData
 
         scope.$watch 'ir.Brake', (n, o) ->
-            percent = inputToGToPercent ir.Brake
+            percent = ir.Brake
             if percent >= 0
                 element.css
-                    top: (percent*-1) + '%'
-                    height: percent + '%'	
+                    top: ((percent*-1)*51+130) + 'px'
                     
 app.directive 'appClutch', (iRData) ->
     link: (scope, element, attrs) ->
         ir = iRData
 
         scope.$watch 'ir.Clutch', (n, o) ->
-            percent = inputToGToPercent ir.Clutch
+            percent = ir.Clutch
             if percent >= 0
                 element.css
-                    top: ((100-percent)*-1) + '%'
-                    left: -50 + '%'
-                    height: (100-percent) + '%'
+                    top: (((1-percent)*-1)*51+130) + 'px'
 
 
-app.filter 'input', -> inputToGToPercent
+#app.filter 'input', -> inputToGToPercent
 
-inputToGToPercent = (input) ->
-    input*100 
+#inputToGToPercent = (input) ->
+#    input*100 
 
 ##### / I N P U T S
 
