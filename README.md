@@ -1,4 +1,4 @@
-iRacing Browser Apps Addons by SuperDiomiro
+iRBrowser Apps Addons by SuperDiomiro
 ====================================
 
 These are addons to the [iRacing Browser Apps by Mihail Latyshov](http://ir-apps.kutu.ru/) and are primarily ment to add more features to the existing overlay for first person streamers.
