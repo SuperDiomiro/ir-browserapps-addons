@@ -24,16 +24,16 @@ Usage
 GearSpeed
 -------------
 
-1. Copy this link: 'http://localhost:8182/sd_gear-speed/'
+1. Copy this link: `http://localhost:8182/sd_gear-speed/`
 2. In OBS add new **CLR Browser** layer and paste it in **URL**.
 3. Set **Dimensions** to 300px times 100px.
 4. Go to the **CSS** tab and replace all with:
 
-'::-webkit-scrollbar {
+`::-webkit-scrollbar {
   visibility: hidden;
 }
 body {
   background: inherit !important;
   margin: 0px auto;
 
-}'
+}`
