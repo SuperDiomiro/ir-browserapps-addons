@@ -29,11 +29,9 @@ GearSpeed
 3. Set **Dimensions** to 300px times 100px.
 4. Go to the **CSS** tab and replace all with:
 
-`::-webkit-scrollbar {
-  visibility: hidden;
-}
-body {
-  background: inherit !important;
-  margin: 0px auto;
+<p>Ein Beispiel in AppleScript:</p>
 
-}`
+<pre><code>tell application "Foo"
+    beep
+end tell
+</code></pre>
