@@ -29,17 +29,16 @@ GearSpeed
 3. Set **Dimensions** to 300px times 100px.
 4. Go to the **CSS** tab and replace all with:
 
-<pre>
-	<code>
-		::-webkit-scrollbar {
-			visibility: hidden;
-			}
-			body {
-			background: inherit !important;
-			margin: 0px auto;
-		}
-	</code>
-</pre>
+<pre><code>
+::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+body {
+	background: inherit !important;
+	margin: 0px auto;
+	}
+</code></pre>
 
 PedalsGforce
 -------------
@@ -49,14 +48,13 @@ PedalsGforce
 3. Set **Dimensions** to 150px times 170px.
 4. Go to the **CSS** tab and replace all with:
 
-<pre>
-	<code>
-		::-webkit-scrollbar {
-			visibility: hidden;
-			}
-			body {
-			background: inherit !important;
-			margin: 0px auto;
-		}
-	</code>
-</pre>
+<pre><code>
+::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+body {
+	background: inherit !important;
+	margin: 0px auto;
+	}
+</code></pre>
