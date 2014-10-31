@@ -16,4 +16,4 @@ Adds an additional blackbox showing the pedal inputs (throttle, brake, clutch) a
 Installation
 =====
 
-Installation Instructions can be found [here](http://ir-apps.kutu.ru/ir-browserapps-addons/)!
+Installation instructions can be found [here](http://ir-apps.kutu.ru/ir-browserapps-addons/)!
