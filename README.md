@@ -17,7 +17,7 @@ Usage
 =====
 
 1. Install the iRacing Browser Apps by Mihail from [here](http://ir-apps.kutu.ru/).
-2. Download the iR Browser Apps Addons by SuperDiomiro [here](http://github.com/SuperDiomiro/ir-browserapps-addons/releases).
+2. Download the iR Browser Apps Addons by GripTV.org [here](http://github.com/SuperDiomiro/ir-browserapps-addons/releases).
 3. Extract the folders of the apps you want to use into the apps folder (located in the main folder) of the iR Browser Apps (if it doesn't exist, create it!).
 4. Start the iR Browser Apps!
 
@@ -35,8 +35,7 @@ GearSpeed
 
 body {
 	background: inherit !important;
-	margin: 0px auto;
-}
+	margin: 0px auto;}
 </code></pre>
 
 PedalsGforce
@@ -53,6 +52,5 @@ PedalsGforce
 
 body {
 	background: inherit !important;
-	margin: 0px auto;
-}
+	margin: 0px auto;}
 </code></pre>
